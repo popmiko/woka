@@ -1,0 +1,14 @@
+学习JavaScript学习笔记
+1.最基本的输出
+  alert("hello new man");//弹窗输入
+  document.write("hello new bog"); //作为body在HTML文件中输入
+  console.log("hello new bog,this is console"); //在控制台中输出
+2.变量声明中let、var、const的区别
+ var
+  使用var声明的变量，其作用域为该语句所在的函数内，且存在变量提升现象；
+  举例说明var
+  for(var i=0;i<=10;i++){ 
+  var sum=0; 
+  sum+=i; 
+  } 
+  console.log(sum);
