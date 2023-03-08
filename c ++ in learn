@@ -1,0 +1,42 @@
+1.定义命名空间，用到一个新的关键字namespace,这个关键字后是命名空间的名字，然后用一个{}，{}内的是命名空间的成员。
+例如：
+1.1 命名空间可以定义部分变量 也可以是一个函数
+// 关键字 名字
+namespace u1
+{
+    int a; // 一个普通的int型变量
+    // 也可以是一个函数
+    int add(int a,int b)
+    {
+        return a + b;
+    }
+}
+1.2 命名空间可以嵌套
+namespace u2
+{
+    // 命名空间里面也可以嵌套命名空间
+    namespace u3
+    {
+        int d1;
+        int d2;
+    }
+}
+1.3 同命名空间名不用文件系统会自动整合最终内容
+// 如果说同一个工程下的不同文件，都有相同的命名空间，编译器最后会将其合并
+ 
+// test1.cpp
+namespace u4
+{
+    int add(int a,int b)
+        return a + b; 
+}
+ 
+// test2.cpp
+namespace u4
+{
+    int mul(int a,int b)
+        return a * b;
+}
+ 
+// 最后这两个函数都是在u4这个命名空间下，不会冲突
+2.
