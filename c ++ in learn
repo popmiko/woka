@@ -37,6 +37,20 @@ namespace u4
     int mul(int a,int b)
         return a * b;
 }
- 
+注意： 命名空间其实相当于一个作用域，命名空间{}内的内容都是在这个空间里面，我们c++的标准库都在std这个命名空间下，
+如果想使用c++标准库的函数，容器，需要在前面加上用std这个命名空间。
+也可以在开头声明空间表示就不用再用std开头。
+例如 uising namespace std；
+注：这样会直接暴露整个标准库；
+也可以这样使用
+例：using namespace std::cin；
 // 最后这两个函数都是在u4这个命名空间下，不会冲突
-2.
+2.命名空间的使用
+2.1直接使用
+namespace u1{int a;}
+pringtf{"%d",u1::a};
+2.2将变量或者整个命名空间展开
+using namespace u1::a;
+//using namespace u1;
+pringtf{"%d",a};
+3
