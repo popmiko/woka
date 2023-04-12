@@ -231,5 +231,4 @@ const char* const pc="abc";
 3.与#define不同，const定义的常量可以有自己的数据类型。
 4.函数参数也可以用const说明，用于保证实参在该函数内不被改动。
 
-kjasodinaoicnoiznxcoinao
->>>>>>> a5cea49e72ab8b5f34915f949b4e95817be4d950
+
